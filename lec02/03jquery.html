@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+  .divCss * {
+    display: block;
+    /*border: 3px solid green;*/
+  }
+</style>
+<script>
+  $(document).ready(function () {
+    $("#btnClick").click(function () {
+      $("div > p").css("border", "2px solid orange");
+    });
+  });
+</script>
+<body>
+<div class="divCss">
+  <p>Good
+    <span>좋은 하루</span>
+    <span>활기찬 하루</span>
+  </p>
+  <p>Nice
+    <span>노력하세요</span>
+    <span>최선을 다하세요</span>
+  </p>
+  <p>Well
+    <span>하나의 마침표를 찍으세요</span>
+    <span>새로운 시작을 하세요</span>
+  </p>
+</div>
+<button id="btnClick">button</button>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<script>
+  $(document).ready(function () {
+    $("#btnClick").click(function () {
+      $("p:last").css("background-color", "green");
+    });
+  });
+</script>
+<body>
+<h1>통합특수전사령부</h1>
+<p>델타포스</p>
+<p>데브그루</p>
+<p>제160특수작전항공대</p>
+<button id="btnClick">click</button>
+</body>
+</html>
